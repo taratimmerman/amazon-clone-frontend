@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Product from './Product';
 
 const Home = () => {
     return (
@@ -7,7 +8,11 @@ const Home = () => {
             {/* Amazon music banner */}
             <Banner />
             {/* Home page products */}
-            <Content />
+            <Content>
+            <Product />
+            <Product />
+            <Product />
+            </Content>
         </Container>
     );
 };
@@ -30,9 +35,9 @@ const Banner = styled.div`
 `;
 
 const Content = styled.div`
-    background: white;
     padding-left: 10px;
     padding-right: 10px;
     margin-top: -350px;
+    display: flex;
 `;
 
